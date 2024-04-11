@@ -1,0 +1,42 @@
+
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px; 
+    
+}
+.contenedorLetras
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+  border-radius: 50%; /* Establece el radio de borde para hacer la imagen redonda */
+  width: 70px; /* Ancho de la imagen */
+  height: 70px; /* Altura de la imagen */
+}
+
+.nombre {
+  font-family: "Inter", sans-serif;
+  margin-top: 0; /* Elimina el margen superior */
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.uvicacion {
+  font-family: "Inter", sans-serif;
+  color: hsl(75, 94%, 57%);
+  font-size: 12px;
+}
+.informacion {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter-regular", sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+}
