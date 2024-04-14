@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://661037cf0640280f219c98cc.mockapi.io/api/v2/users")
+    fetch("https://66180f3b9a41b1b3dfbc28b2.mockapi.io/api/v1/users")
       .then((res) => {
         return res.json();
       })
@@ -14,7 +14,7 @@ function App() {
   }, []);
   return (
     <div>
-      {console.log(users)}
+      
       {users.map((user) => (
         <Card key={user.id} user={user} />
       ))}

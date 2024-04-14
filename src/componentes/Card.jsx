@@ -5,13 +5,14 @@ import "./Card.css";
 
 function Card(props) {
   const user = props.user;
-
+  const dio=user['Social-Links'];
   return (
     <div className="contenedorCarta">
       <UserDetails user={user}/>
-      <ButtonSection />
+      <ButtonSection botones={dio}/>
     </div>
   );
 }
 
 export default Card;
+
