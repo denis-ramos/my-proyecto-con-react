@@ -1,19 +1,22 @@
 import React from "react";
-import foto from "../assets/avatar-jessica.jpeg";
 import "./UserDetails.css";
-function UserDetails() {
+
+const UserDetails = (props) => {
+  
+  const user = props.user;
+
   return (
     <div className="contenedor">
       <div className="contenedorImagen">
-        <img className="imagen" src={foto} alt="imagen1"></img>
+        <img className="imagen" src={user.avatar} alt="Avatar" />
       </div>
       <div className="contenedorLetras">
-        <h1 className="nombre">Jessica Randall</h1>
-        <h2 className="uvicacion">London, United Kingdom</h2>
-        <p className="informacion">"Front-end developer and avid reader"</p>
+        <h1 className="nombre">{user.name}</h1>
+        <h2 className="uvicacion">{user.location}</h2>
+        <p className="informacion">{user.description}</p>
       </div>
     </div>
   );
-}
+};
 
 export default UserDetails;

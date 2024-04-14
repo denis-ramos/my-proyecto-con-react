@@ -2,10 +2,13 @@ import React from "react";
 import UserDetails from "./UserDetails";
 import ButtonSection from "./ButtonSection";
 import "./Card.css";
-function Card() {
+
+function Card(props) {
+  const user = props.user;
+
   return (
     <div className="contenedorCarta">
-      <UserDetails />
+      <UserDetails user={user}/>
       <ButtonSection />
     </div>
   );
