@@ -1,35 +1,33 @@
 
-.contenedorImagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 125px; 
-    
-}
 .contenedorLetras
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.contenedor
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 250px;
+
 }
 
-.imagen {
-  border-radius: 50%; /* Establece el radio de borde para hacer la imagen redonda */
-  width: 70px; /* Ancho de la imagen */
-  height: 70px; /* Altura de la imagen */
-}
 
-.nombre {
+.datos {
   font-family: "Inter", sans-serif;
   margin-top: 0; /* Elimina el margen superior */
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
 }
-.uvicacion {
+/* .uvicacion {
   font-family: "Inter", sans-serif;
   color: hsl(75, 94%, 57%);
   font-size: 12px;
@@ -39,4 +37,4 @@
   font-family: "Inter-regular", sans-serif;
   font-weight: normal;
   font-size: 11px;
-}
+} */

@@ -1,10 +1,21 @@
 import Card from "./componentes/Card";
 import { useEffect, useState } from "react";
 
+function aletoriedad() {
+  const numeros = [];
+  for (let i = 0; i < 10; i++) {
+    numeros.push(Math.floor(Math.random() * 857)); // Puedes ajustar el rango según tus necesidades
+  }
+  
+  numeros.toString();
+  return numeros;
+}
+
+//const hol1=["1","67"] el fetch se aplica a un vector y el fetech solo toamara loq ue se esta dentro del vector
 function App() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://66180f3b9a41b1b3dfbc28b2.mockapi.io/api/v1/users")
+    fetch("https://rickandmortyapi.com/api/character/"+aletoriedad())
       .then((res) => {
         return res.json();
       })
@@ -12,11 +23,12 @@ function App() {
         setUsers(data);
       });
   }, []);
+  console.log(users)
   return (
     <div>
       
-      {users.map((user) => (
-        <Card key={user.id} user={user} />
+      {users.map((personajes) => (
+        <Card key={personajes.id} user={personajes} />
       ))}
 
     </div>
