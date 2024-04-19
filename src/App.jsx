@@ -1,4 +1,5 @@
 import Card from "./componentes/Card";
+import Cardcharacter from "./componentes/Cardcharacter";
 import { useEffect, useState } from "react";
 
 function aletoriedad() {
@@ -6,7 +7,7 @@ function aletoriedad() {
   for (let i = 0; i < 10; i++) {
     numeros.push(Math.floor(Math.random() * 857)); // Puedes ajustar el rango según tus necesidades
   }
-  
+
   numeros.toString();
   return numeros;
 }
@@ -15,7 +16,7 @@ function aletoriedad() {
 function App() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character/"+aletoriedad())
+    fetch("https://rickandmortyapi.com/api/character/" + aletoriedad())
       .then((res) => {
         return res.json();
       })
@@ -23,14 +24,16 @@ function App() {
         setUsers(data);
       });
   }, []);
-  console.log(users)
+  console.log(users);
   return (
     <div>
-      
-      {users.map((personajes) => (
+      {/* {users.map((personajes) => (
         <Card key={personajes.id} user={personajes} />
-      ))}
+      ))} */}
 
+      {users.map((personajes) => (
+        <Cardcharacter key={personajes.id} user={personajes} />
+      ))}
     </div>
   );
 }
