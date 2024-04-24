@@ -1,40 +1,11 @@
-import Card from "./componentes/Card";
-import Cardcharacter from "./componentes/Cardcharacter";
-import { useEffect, useState } from "react";
-
-function aletoriedad() {
-  const numeros = [];
-  for (let i = 0; i < 10; i++) {
-    numeros.push(Math.floor(Math.random() * 857)); // Puedes ajustar el rango según tus necesidades
-  }
-
-  numeros.toString();
-  return numeros;
-}
-
-//const hol1=["1","67"] el fetch se aplica a un vector y el fetech solo toamara loq ue se esta dentro del vector
+import React from 'react'
+import Rickandmortyapp from './componentes/Rickandmortyapp';
+import Home from './componentes/Home';
+import Navigation from './Routers/Navigation';
 function App() {
-  const [users, setUsers] = useState([]);
-  useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character/" + aletoriedad())
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setUsers(data);
-      });
-  }, []);
-  console.log(users);
-  return (
-    <div>
-      {/* {users.map((personajes) => (
-        <Card key={personajes.id} user={personajes} />
-      ))} */}
 
-      {users.map((personajes) => (
-        <Cardcharacter key={personajes.id} user={personajes} />
-      ))}
-    </div>
+  return (
+    <Navigation/>
   );
 }
 
