@@ -6,18 +6,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './componentes/Home.jsx';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home/>,
-  },
-]);
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+ReactDOM.render(
+  <Router basename="/my-proyecto-con-react"> {/* Aquí especificamos el basename */}
+    <Route exact path="/" component={App} />
+    {/* Otras rutas de tu aplicación */}
+  </Router>,
+  document.getElementById('root')
+);
