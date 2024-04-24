@@ -1,11 +1,10 @@
 {
-  "homepage": "http://denis-ramos/my-proyecto-con-react/",
   "name": "my-proyecto-con-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "nmp run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
