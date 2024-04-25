@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Rickandmortyapp from "./componentes/Rickandmortyapp.jsx";
 
-import { createBrowserRouter, createHashRouter, Route, Router, RouterProvider } from "react-router-dom";
+import { createHashRouter,RouterProvider } from "react-router-dom";
 import Home from "./componentes/Home.jsx";
 
 const router =createHashRouter([
