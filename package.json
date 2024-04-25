@@ -1,7 +1,7 @@
 {
   "name": "my-proyecto-con-react",
   "private": true,
-  "homepage": "http://denis-ramos.github.io/my-proyecto-con-react/",
+  "homepage": "https://denis-ramos.github.io/my-proyecto-con-react/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
