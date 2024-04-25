@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import Rickandmortyapp from "./componentes/Rickandmortyapp.jsx";
-import Home from "./componentes/Home.jsx";
 
 import { createBrowserRouter, createHashRouter, Route, Router, RouterProvider } from "react-router-dom";
 import Home from "./componentes/Home.jsx";
