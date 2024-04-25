@@ -1,8 +1,8 @@
 {
+  "homepage":"http://denis-ramos.github.io/my-proyecto-con-react",
   "name": "my-proyecto-con-react",
   "private": true,
-  "homepage": "https://denis-ramos.github.io/my-proyecto-con-react/",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
